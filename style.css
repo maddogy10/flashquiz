@@ -1,0 +1,456 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #ffc363ff;
+    height: 68px;
+    display: flex;
+    width: 100%;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: #143141;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    align-self: center;
+    height: 100%;
+    padding: 14px 14px;
+    font-weight: bold;
+    display: block;
+  }
+.navbar a input {
+    font-size: 16px;
+    color: #143141;
+    text-align: left;
+    text-decoration: none;
+  padding: 0;
+    font-weight: bold;
+    display: block;
+}
+#searchbar {
+  padding: 22px 14px;
+  height: auto;
+  cursor: auto;
+  align-self: auto;
+  line-height: auto;
+  margin: 0;
+  margin-left: auto;
+}
+  
+  .navbar #sign-in {
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    align-self: center;
+    height: 100%;
+    font-weight: bold; 
+    display: block;
+    float: right;
+    border-radius: 5px;
+  }
+
+
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    position: relative;
+    display: block;
+  }
+  
+  .navbar #mysets:hover, .dropdown:hover .dropbtn {
+    background-color: orange;
+  }
+
+.navbar a:hover {
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 68px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .navbar a img {
+    padding: 0px;
+    /*max-width: 10%;*/
+    width: 40px;
+    height: 40px;
+}
+#navImg {
+    height: 40px;
+}
+.dropdown img {
+    border-radius: 50%;
+    height: 40px;
+    float: right;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
+}
+#create-set div {
+  background-color: lightgrey;
+  padding: 5px;
+  border-radius: 5px;
+}
+#create-set { 
+  padding: 10px 14px;
+}
+
+.scrollsets {
+  overflow: auto;
+  white-space: nowrap;
+
+
+}
+
+.scrollsets div {
+  background-color: #ddd;
+  text-align: center;
+  height: 150px;
+  margin: 10px;
+  display: inline-block;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.scrollsets div h2 {
+line-height:150px;
+  margin: 0;
+}
+
+.scrollcourses {
+  overflow: auto;
+  white-space: nowrap;
+
+
+}
+
+.scrollcourses div {
+  background-color: #ddd;
+  text-align: center;
+  height: 150px;
+  margin: 10px;
+  display: inline-block;
+  width: 250px;
+  border-radius: 8px;
+}
+
+.scrollcourses div:hover,
+.scrollsets div:hover {
+  cursor: pointer;
+}
+
+.scrollcourses div h2 {
+line-height:150px;
+  margin: 0;
+}
+
+#bodypart {
+  padding-left: 10px;
+}
+
+
+
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  transition: all .8s ease;
+}
+
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  text-align: center;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 3px 3px 3px 3px #ddd;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: default;
+}
+a:visited {
+  text-decoration: none;
+  color: default;
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+}
+.cardcontainer {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 25%;
+  margin-left: 150px;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 24.5%;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  margin-left: 259px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#users-set {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+#title-desc {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+#t-d {
+  display: flex;
+  flex-direction: column;
+}
+.individualTerm {
+  display: flex;
+}
+#cardTable {
+  display: table;
+  border-spacing: 5px;
+  margin-right: 20%;
+}
+#cardRow td {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  box-shadow: -1px 1px 1px 1px lightgray;
+  border-radius: 2px;
+  
+}
+#cardRow {
+  width: 100%;
+  background-color: white;
+
+  
+
+}
+#tbody {
+  display: table;
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  #cardTable {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+#writeModal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+#writeModalx {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin-top: 15px;
+  margin-right: 5px;
+}
+#writeModal h1 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin-bottom: 0;
+}
+#combowrite {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+#writeleft {
+  width: 30%;
+  height: 100%;
+ /* position: absolute;*/
+  background-color: gainsboro;
+  
+}
+#writeleft h2 {
+  text-align: center;
+
+}
+#rembar {
+  
+  background-color: #CBC3E3;
+}
+
+
+
+.writebar {
+  width: 80%;
+  height: 20px;
+
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+#corbar {
+  background-color: lightgreen;
+}
+#incbar {
+  background-color: salmon;
+}
+.wrletxt {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-size: smaller;
+  margin: auto;
+  margin-top: 2px;
+}
+.wrletxt h4 {
+  margin-top: 5px;
+}
+.barleft {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+}
+#writeright {
+  width: 65%;
+  position: relative;
+
+}
+#writenter {
+  display: flex;
+  justify-content: space-between;
+}
+#writenter button {
+  width: 50px;
+}
+#compWrite, #userWrite {
+  position: absolute;
+  display: inline-flex;
+  width: 100%; 
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#userWrite {
+  margin-top: 50px;
+  flex-direction: column;
+}
+#rightWrongWrite button {
+  height: 30px;
+  margin: 24px;
+  margin-top: 150px;
+}
+#rightWrongWrite  {
+  display: none;
+  position: absolute; 
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
